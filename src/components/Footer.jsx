@@ -1,6 +1,10 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer
       style={{
@@ -27,7 +31,9 @@ const Footer = () => {
               fontWeight: "700",
               marginBottom: "1rem",
               color: "#27A6B7",
+              cursor: "pointer",
             }}
+            onClick={scrollToTop}
           >
             Ghaith Bejaoui
           </h3>
